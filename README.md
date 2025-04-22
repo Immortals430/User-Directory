@@ -1,12 +1,56 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# User Directory
 
-Currently, two official plugins are available:
+User Directory is a simple project build for screening test of RitvaBuild.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Link to production site: [User Directory](https://user-directory-immortals430.netlify.app/)
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/Immortals430/User-Directory.git
+```
+
+Go to the project directory
+
+```bash
+  cd User-Directory
+```
+
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start app
+
+```bash
+  node run dev
+```
+
+
+
+
+## Features
+- Used React functional components and hooks
+- Fetch user data with API
+- Display the following user info: Name, Email, Phone, Company Name, Website
+- Implemented a search bar to filter users by name
+- Display a loading message while fetching data
+- Show a friendly error message if API fails
+
+
+
+## Screenshots
+
+
+<p align="center" >
+<img src="https://github.com/user-attachments/assets/bb0fd936-3c72-469b-b709-4c1b8021aa93" width="468" height="300" />
+</p>
+
+
