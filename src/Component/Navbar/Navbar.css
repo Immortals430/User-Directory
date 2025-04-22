@@ -1,0 +1,43 @@
+nav {
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background-color: var(--background);
+  z-index: 1;
+
+  h1 {
+    font-size: xx-large;
+    cursor: pointer;
+  }
+
+  .nav-right-sec {
+    position: relative;
+    width: clamp(380px, 100%, 30%);
+  }
+
+  input {
+    width: 100%;
+    background-color: var(--white);
+    padding: 10px 45px 10px 20px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+  }
+
+  button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    font-size: x-large;
+    cursor: pointer;
+  }
+}

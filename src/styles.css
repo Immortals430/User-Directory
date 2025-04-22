@@ -1,0 +1,40 @@
+:root {
+  --background: #e3f2fd;
+  --white: #fff;
+  --card-background: #7dd7d7;
+  --user-logo: #a7e7e4;
+  --text: #145050;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  background-color: var(--background);
+}
+
+a{
+  color: initial;
+  text-decoration: none;
+}
+
+.center {
+  width: 100vw;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text);
+  flex-flow: column;
+  gap: 0.5rem;
+}
+
+
+
