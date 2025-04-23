@@ -12,7 +12,7 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
   const [noResult, setNoResult] = useState(false);
-  const [mobileNav, setMobileNav] = useState(false)
+  const [mobileNav, setMobileNav] = useState(false);
 
   // fetch user data
   const fetchData = async () => {
@@ -21,7 +21,6 @@ function App() {
       res = await res.json();
       setUserData(res);
       setFilteredData(res);
-
     } catch (err) {
       setError(true);
     } finally {
@@ -34,12 +33,11 @@ function App() {
     fetchData();
   }, []);
 
-
   // error
-  if(error) return <Error fetchData={fetchData} setError={setError} />
+  if (error) return <Error fetchData={fetchData} setError={setError} />;
 
   // loading
-  if(loading) return <Loading />
+  if (loading) return <Loading />;
 
   return (
     <>
@@ -51,7 +49,13 @@ function App() {
       />
 
       {noResult ? <NoSearchResult /> : <Card filterData={filterData} />}
-      <MobileNavbar mobileNav={mobileNav} setMobileNav={setMobileNav} />
+      <MobileNavbar
+        mobileNav={mobileNav}
+        setMobileNav={setMobileNav}
+        setFilteredData={setFilteredData}
+        userData={userData}
+        setNoResult={setNoResult}
+      />
     </>
   );
 }

@@ -3,7 +3,12 @@ import { IoSearch } from "react-icons/io5";
 import { IoMdMenu } from "react-icons/io";
 import "./Navbar.css";
 
-export default function Navbar({ userData, setFilteredData, setNoResult, setMobileNav }) {
+export default function Navbar({
+  userData,
+  setFilteredData,
+  setNoResult,
+  setMobileNav,
+}) {
   // filter user by name
   const filter = (e) => {
     e.preventDefault();
