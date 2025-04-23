@@ -1,4 +1,4 @@
-nav {
+.navbar {
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -16,6 +16,7 @@ nav {
 
   .nav-right-sec {
     position: relative;
+    align-content: center;
     width: clamp(380px, 100%, 30%);
   }
 
@@ -40,4 +41,26 @@ nav {
     font-size: x-large;
     cursor: pointer;
   }
+
+  .menu{
+    display: none;
+    cursor: pointer;
+  }
+}
+
+
+@media only screen and (max-width: 768px){
+  .navbar{
+    .nav-right-sec{
+      width: auto;
+      form{
+        display: none;
+      }
+    }
+
+    .menu{
+      display: block;
+    }
+  }
+
 }

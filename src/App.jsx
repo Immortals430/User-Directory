@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-
 import Navbar from "./Component/Navbar/Navbar";
 import Card from "./Component/Card/Card";
 import Error from "./Component/Error/Error";
 import NoSearchResult from "./Component/NoSearchResult/NoSearchResult";
 import Loading from "./Component/Loading/Loading";
+import MobileNavbar from "./Component/Navbar/MobileNavbar";
 
 function App() {
   const [userData, setUserData] = useState([]);
@@ -12,6 +12,7 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
   const [noResult, setNoResult] = useState(false);
+  const [mobileNav, setMobileNav] = useState(false)
 
   // fetch user data
   const fetchData = async () => {
@@ -46,9 +47,11 @@ function App() {
         setFilteredData={setFilteredData}
         userData={userData}
         setNoResult={setNoResult}
+        setMobileNav={setMobileNav}
       />
 
       {noResult ? <NoSearchResult /> : <Card filterData={filterData} />}
+      <MobileNavbar mobileNav={mobileNav} setMobileNav={setMobileNav} />
     </>
   );
 }
